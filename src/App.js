@@ -10,6 +10,7 @@ import ImageShowcase from "./components/ImageShowcase";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import CallToAction from "./components/CallToAction";
+import OfferForm from "./components/OfferForm";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
         <Navigation/>
         <Header/>
         <ImageShowcase/>
-        <Testimonials/>
-        <CallToAction/>
         <IconsGrid/>
+        <CallToAction/>
+        <OfferForm/>
+        <Testimonials/>
         <Footer/>
     </div>
   );

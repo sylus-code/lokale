@@ -36,15 +36,20 @@ ul{
     padding-inline-start: 0px;
 }
 .call-to-action{
-    color: orange;
-    text-shadow: #1b1e21 2px 3px 1px;
+
     background:url("./assets/img/pic3.png") ;
-    background-position: right top;
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #4e555b;
 }
+.call-to-action p {
+    text-shadow: white 3px 3px 0;
+    font-size: 4rem;
+    font-family:  Impact,"Arial Black";
+    color: orange;
 
+}
 @media (min-width: 768px){
     header.masthead {
         padding-top: 19rem;

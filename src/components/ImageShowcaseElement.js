@@ -24,7 +24,7 @@ class ImageShowcaseElement extends Component{
                 <div className={"col-lg-6 "+isEven+" text-white showcase-img "+addPic}></div>
 
                 <div className={"col-lg-6 "+isOdd+" my-auto showcase-text"}>
-                    <h2>{heading}</h2>
+                    <h2 className="text-uppercase">{heading}</h2>
                     <Content messages={message}/>
 
                 </div>
