@@ -6,7 +6,7 @@ class Header extends Component{
         return (
             <header className="masthead  text-white text-left " id='/'>
                 {/*<div className="overlay"></div>*/}
-                <div id="businessCard" className="col-8 col-md-8 order-1">
+                <div id="businessCard" className="col-12 col-md-8 order-1">
                     <div className="row ">
                         <div className="col-xl-9 pl-5">
                             <h1 className="text-uppercase font-weight-bolder">Lokale mieszkalne</h1>
