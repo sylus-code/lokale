@@ -1,58 +1,107 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-
 .image-case-1 {
-  background-image: url("assets/img/pic1.jpg");
+    background-image: url("assets/img/pic1.jpg");
 }
+
 .image-case-2 {
-  background-image: url("assets/img/pic2.jpg");
+    background-image: url("assets/img/pic2.jpg");
 }
+
 .image-case-3 {
-  background-image: url("assets/img/pic3.png");
+    background-image: url("assets/img/pic3.png");
 }
+
 .image-case-4 {
-  background-image: url("assets/img/pic4.jpg");
+    background-image: url("assets/img/pic4.jpg");
 }
 
 #businessCard .row div {
-  background-color: darkorange;
-  padding-left:2rem;
-  text-align: left;
+    background-color: darkorange;
+    padding-left: 2rem;
+    text-align: left;
 }
 
-ul{
+ul {
     padding-inline-start: 0px;
 }
-.call-to-action{
 
-    background:url("./assets/img/pic3.png") ;
+.call-to-action {
+
+    background: url("./assets/img/pic3.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #4e555b;
 }
+
 .call-to-action p {
     text-shadow: white 3px 3px 0;
     font-size: 4rem;
-    font-family:  Impact,"Arial Black";
+    font-family: "Arial Black", monospace;
     color: orange;
 
 }
-@media (min-width: 768px){
+/* animation on icons in IconsGrid component */
+.hover-zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.icon-spacing {
+    margin-bottom: 2em;
+}
+@media (min-width: 768px) {
     header.masthead {
-        padding-top: 19rem;
-        padding-bottom: 3rem;
+        padding-top: 25rem;
+        padding-bottom: 5rem;
+    }
+}
+/* animation on header button sliding to next section after click */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+
+}
+
+.circle {
+    background: orange;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+}
+
+.circle i {
+    margin-left: 0.25em;
+}
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
 }

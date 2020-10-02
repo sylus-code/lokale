@@ -3,14 +3,14 @@ import React, {Component} from 'react';
 class OfferForm extends Component {
     render() {
         return (
-            <section className=" text-dark text-center mt-5">
+            <section className=" text-dark text-center mt-5" id='contact'>
                 <div className="overlay"></div>
                 <div className="container">
                     <div className="row no-gutters">
-                        <div className="col-xl-9 mx-auto mt-3">
+                        <div className=" col-xl-9 mx-auto mt-3">
                             <h1 className="mb-4 text-uppercase">Wyślij zapytanie o aktualną ofertę</h1>
                         </div>
-                        <div className="col-md-12 col-lg-12 col-xl-8 mx-auto mb-3 mt-3">
+                        <div className="col-md-12 col-lg-12 col-xl-8 mx-auto mb-5 mt-3">
                             <form className="order-md-1">
                                 <h4 className="font-weight-light text-uppercase">Twoje dane kontaktowe:</h4>
                                 <div className="form-row">
@@ -35,7 +35,7 @@ class OfferForm extends Component {
                                 <div className="form-row">
                                     <div className="col-12 col-md-3 mb-2">
                                         <input type="text" className="form-control form-control btn-outline-warning"
-                                               placeholder="Całkowity koszt..."/>
+                                               placeholder="Budżet..."/>
                                     </div>
                                     <div className="col-12 col-md-6 mb-2">
                                         <input type="text" className="form-control form-control btn-outline-warning"
@@ -43,7 +43,7 @@ class OfferForm extends Component {
                                     </div>
                                     <div className="col-12 col-md-3 mb-2">
                                         <input type="text" className="form-control form-control btn-outline-warning"
-                                               placeholder="Wielkość w m&sup2;..."/>
+                                               placeholder="Powierzchnia w m&sup2;..."/>
                                     </div>
 
                                 </div>
@@ -64,8 +64,8 @@ class OfferForm extends Component {
                                     <input type="text" className="form-control list-group-item-warning" placeholder="Mieszkania z rynku wtórnego"/>
                                 </div>
 
-                                <div className="col-12 col-md-3 mx-md-auto mt-5">
-                                    <button type="submit" className="btn btn-block btn-lg btn-warning">Wyślij
+                                <div className=" col-md-4 mx-md-auto mt-5">
+                                    <button type="submit" className="btn  btn-block btn-lg btn-warning">Wyślij
                                     </button>
                                 </div>
                             </form>

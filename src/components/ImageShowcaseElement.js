@@ -9,7 +9,6 @@ class ImageShowcaseElement extends Component{
         let addPic = pic;
         let isEven = "";
         let isOdd ="";
-        console.log(message);
 
         if(even === "true"){
             isEven ="order-lg-1";

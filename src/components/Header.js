@@ -1,22 +1,24 @@
 import React, {Component} from 'react';
+import PulseButton from "./PulseButton";
 
 class Header extends Component{
     render() {
         return (
-            <header className="masthead text-white text-left">
-                <div className="overlay"></div>
-                <div id="businessCard" className="col-sm-10">
-                    <div className="row">
-                        <div className="col-xl-9">
+            <header className="masthead  text-white text-left " id='/'>
+                {/*<div className="overlay"></div>*/}
+                <div id="businessCard" className="col-8 col-md-8 order-1">
+                    <div className="row ">
+                        <div className="col-xl-9 pl-5">
                             <h1 className="text-uppercase font-weight-bolder">Lokale mieszkalne</h1>
                             <p>
-                                <i className="fas fa-envelope pl-1"></i><span className="ml-4 h4 font-weight-bolder">szyndler1313@gmail.com</span>
+                                <a href='mailto:szyndler1313@gmail.com' className="h3 font-weight-bolder text-white"><i className="fas fa-envelope h2 mb-0 mt-2 mr-2"></i>szyndler1313@gmail.com</a>
                                 <br/><br/>
-                                <i className="fas fa-mobile-alt text-dark fa-2x "></i><span className="ml-4 h3 text-dark fon font-weight-bold">693 419 740</span>
+                                <a href='tel:693419740' className="h2 text-dark font-weight-bold"><i className="fas fa-mobile-alt ml-1 mr-2"></i>693 419 740</a>
                             </p>
                         </div>
                     </div>
                 </div>
+                <PulseButton className='order-2'/>
             </header>
     );
     }
