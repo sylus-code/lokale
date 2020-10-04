@@ -30,14 +30,12 @@ code {
 
 #businessCard .row div {
     background-color: darkorange;
-    padding-left: 2rem;
     text-align: left;
     padding-top: 1.5rem;
 }
 
 #businessCard .row p {
     font-size: 1.2rem;
-
 }
 
 #businessCard h1 {
@@ -50,6 +48,9 @@ ul {
 
 #offer ul li {
     font-size: 1.25rem;
+}
+#offer h2 {
+    font-size: 1.75rem;
 }
 
 #navigation {
@@ -102,6 +103,11 @@ ul {
 
 .circle i {
     display: none;
+}
+@media (min-width: 350px) {
+    #businessCard .row div {
+        padding-left: 3rem;
+    }
 }
 
 @media (min-width: 768px) {

@@ -11,7 +11,7 @@ class Header extends Component {
 
                 <div id="businessCard" className="col-12 col-md-8 order-1">
                     <div className="row ">
-                        <div className="col-xl-9 pl-5">
+                        <div className="col-xl-9">
                             <h1 className="text-uppercase font-weight-bolder">Lokale mieszkalne</h1>
                             <p>
                                 <a href='mailto:szyndler1313@gmail.com' className=" font-weight-bolder text-white">
