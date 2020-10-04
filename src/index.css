@@ -32,28 +32,60 @@ code {
     background-color: darkorange;
     padding-left: 2rem;
     text-align: left;
+    padding-top: 1.5rem;
 }
 
+#businessCard .row p {
+    font-size: 1.2rem;
+
+}
+
+#businessCard h1 {
+    font-size: 1.6rem;
+
+}
 ul {
     padding-inline-start: 0px;
 }
 
+#offer ul li {
+    font-size: 1.25rem;
+}
+
+#navigation {
+    opacity: 0.9;
+    padding: 1rem;
+}
+
+#contact label {
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+#contact .form-control {
+    height: inherit;
+}
+
+#contact h1 {
+    font-size: 1.85rem;
+}
 .call-to-action {
 
-    background: url("./assets/img/pic3.png");
-    background-position: left top;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4e555b;
+    background: #4e555b url("./assets/img/pic3.png") no-repeat left top;
 }
 
 .call-to-action p {
     text-shadow: white 3px 3px 0;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: "Arial Black", monospace;
     color: orange;
-
 }
+
+.call-to-action h1 {
+    font-size: 1.75rem;
+}
+
 /* animation on icons in IconsGrid component */
 .hover-zoom {
     transition: transform .2s; /* Animation */
@@ -67,34 +99,58 @@ ul {
 .icon-spacing {
     margin-bottom: 2em;
 }
-@media (min-width: 768px) {
-    header.masthead {
-        padding-top: 25rem;
-        padding-bottom: 5rem;
-    }
-}
-/* animation on header button sliding to next section after click */
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;
-
-}
-
-.circle {
-    background: orange;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    box-shadow: 0px 0px 1px 1px #0000001a;
-}
 
 .circle i {
-    margin-left: 0.25em;
+    display: none;
 }
-.pulse {
-    animation: pulse-animation 2s infinite;
+
+@media (min-width: 768px) {
+
+    header.masthead h1 {
+        font-size: 2rem;
+        text-align: left;
+        padding-top: 1rem;
+    }
+
+    /* animation on header button sliding to next section after click */
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+
+    }
+
+    .circle {
+        margin-top: 2rem;
+        background: orange;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        box-shadow: 0px 0px 1px 1px #0000001a;
+    }
+
+    .circle i {
+        display: block;
+        font-size: 3rem;
+        padding-left: 0.25rem;
+    }
+
+    .pulse {
+        animation: pulse-animation 2s infinite;
+    }
+
+    #contact label {
+        font-size: 1rem;
+    }
+
+    .call-to-action p {
+        font-size: 3.5rem;
+    }
+
+    .call-to-action h1 {
+        font-size: 2.5rem;
+    }
 }
 
 @keyframes pulse-animation {
@@ -105,3 +161,11 @@ ul {
         box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
 }
+
+.circle:hover, .nav-item:hover, .navbar-brand:hover {
+    cursor: pointer;
+    text-shadow: darkorange 0 0 10px;
+    color: orange;
+}
+
+

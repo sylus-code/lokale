@@ -10,26 +10,24 @@ import ImageShowcase from "./components/ImageShowcase";
 import Footer from "./components/Footer";
 import CallToAction from "./components/CallToAction";
 import OfferForm from "./components/OfferForm";
- import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
+
 
 class App extends Component {
     render() {
         return (
-<Router>
+            <Router>
+
                 <div className="App">
                     <Navigation/>
                     <Header/>
-                    {/*<Route path='/' component={Header}/>*/}
-                    {/*<Route path='/about'/>*/}
                     <IconsGrid/>
-                    {/*<Route path='/offer'/>*/}
                     <ImageShowcase/>
-                    {/*<CallToAction/>*/}
-                    {/*<Route path='/contact'/>*/}
+                    <CallToAction/>
                     <OfferForm/>
                     <Footer/>
                 </div>
-</Router>
+            </Router>
         );
     }
 }

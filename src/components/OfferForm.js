@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class OfferForm extends Component {
     render() {
         return (
-            <section className=" text-dark text-center mt-5" id='contact'>
+            <section className="text-dark text-center mt-5" id='contact'>
                 <div className="overlay"></div>
                 <div className="container">
                     <div className="row no-gutters">
@@ -53,7 +53,9 @@ class OfferForm extends Component {
                                             <input type="checkbox"/>
                                         </div>
                                     </div>
-                                    <input type="text" className="form-control list-group-item-warning" placeholder="Mieszkania z rynku pierwotnego/deweloperskiego"/>
+                                    <label className="form-control text-left text-secondary list-group-item-warning">Mieszkania
+                                        z rynku pierwotnego/deweloperskiego</label>
+
                                 </div>
                                 <div className="input-group mb-3">
                                     <div className="input-group-prepend">
@@ -61,7 +63,8 @@ class OfferForm extends Component {
                                             <input type="checkbox"/>
                                         </div>
                                     </div>
-                                    <input type="text" className="form-control list-group-item-warning" placeholder="Mieszkania z rynku wtórnego"/>
+                                    <label className="form-control text-left text-secondary list-group-item-warning">Mieszkania
+                                        z rynku wtórnego</label>
                                 </div>
 
                                 <div className=" col-md-4 mx-md-auto mt-5">
