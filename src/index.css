@@ -76,10 +76,10 @@ ul {
 }
 
 .call-to-action p {
-    text-shadow: white 3px 3px 0;
+    text-shadow: azure 0px 0px 10px;
     font-size: 2rem;
-    font-family: "Arial Black", monospace;
-    color: orange;
+    font-family: Impact,"Arial Black", monospace;
+    color: #fd7e14;
 }
 
 .call-to-action h1 {
