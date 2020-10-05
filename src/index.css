@@ -79,7 +79,8 @@ ul {
 .call-to-action p {
     text-shadow: azure 0px 0px 10px;
     font-size: 2rem;
-    font-family: Impact,"Arial Black", monospace;
+    font-weight: 800;
+    font-family: Impact,"Arial Black", sans-serif;
     color: #fd7e14;
 }
 
