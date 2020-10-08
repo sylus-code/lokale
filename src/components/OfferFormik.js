@@ -15,7 +15,7 @@ class OfferFormik extends Component {
         ).then((response) => {
             if (response.status === 'success') {
                 alert("Wiadomość została wysłana.");
-                this.resetForm()
+                this.resetForm();
             } else if (response.status === 'error') {
                 alert("Nie udało się wysłać wiadomości. Sprawdź poprawność danych.")
             }
@@ -68,10 +68,7 @@ class OfferFormik extends Component {
                                 }}
                                 onSubmit={async (values) => {
                                     await new Promise((r) => setTimeout(r, 500));
-                                    console.log('jest');
-                                    // alert(JSON.stringify(values, null, 2));
                                     this.sendEmail(JSON.stringify(values));
-                                    console.log(values);
                                 }}
                             >
                                 {({errors, touched, validateField, validateForm}) => (
