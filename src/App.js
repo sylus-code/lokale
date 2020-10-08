@@ -9,8 +9,8 @@ import IconsGrid from "./components/IconsGrid";
 import ImageShowcase from "./components/ImageShowcase";
 import Footer from "./components/Footer";
 import CallToAction from "./components/CallToAction";
-import OfferForm from "./components/OfferForm";
 import {BrowserRouter as Router} from 'react-router-dom';
+import OfferFormik from "./components/OfferFormik";
 
 
 class App extends Component {
@@ -24,7 +24,7 @@ class App extends Component {
                     <IconsGrid/>
                     <ImageShowcase/>
                     <CallToAction/>
-                    <OfferForm/>
+                    <OfferFormik/>
                     <Footer/>
                 </div>
             </Router>
