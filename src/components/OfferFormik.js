@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {Formik, Field, Form} from 'formik';
 
-
 class OfferFormik extends Component {
     sendEmail(values) {
-        fetch('/email', {
+        fetch('/mail', {
             method: "POST",
             body: JSON.stringify(values),
             headers: {
@@ -13,11 +12,11 @@ class OfferFormik extends Component {
             },
         }).then(
             (response) => (response.json())
-        ).then((response)=> {
+        ).then((response) => {
             if (response.status === 'success') {
                 alert("Wiadomość została wysłana.");
                 this.resetForm()
-            } else if(response.status === 'error') {
+            } else if (response.status === 'error') {
                 alert("Nie udało się wysłać wiadomości. Sprawdź poprawność danych.")
             }
         })
@@ -35,12 +34,12 @@ class OfferFormik extends Component {
 
     validateUsername(value) {
         let error;
-        if (value === 'admin'|| value ==='Admin') {
+        if (value === 'admin' || value === 'Admin') {
             error = 'Nice try!';
         }
         if (!value) {
             error = 'Wpisz swoje imię';
-        } else if (!/^[a-zA-Z ]+$/.test(value)) {
+        } else if (!/^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]+$/.test(value)) {
             error = 'Niepoprawna wartość';
         }
         return error;
@@ -69,7 +68,7 @@ class OfferFormik extends Component {
                                 }}
                                 onSubmit={async (values) => {
                                     await new Promise((r) => setTimeout(r, 500));
-console.log('jest');
+                                    console.log('jest');
                                     // alert(JSON.stringify(values, null, 2));
                                     this.sendEmail(JSON.stringify(values));
                                     console.log(values);
@@ -86,7 +85,7 @@ console.log('jest');
                                                        type="text"
                                                        className="form-control form-control btn-outline-warning"
                                                        placeholder="Imię..."
-                                                       validate={(value)=>this.validateUsername(value)} required/>
+                                                       validate={(value) => this.validateUsername(value)} required/>
                                                 {errors.name && touched.name && <div>{errors.name}</div>}
                                             </div>
                                             <div className="col-12 col-md-6 mb-2">
@@ -95,7 +94,7 @@ console.log('jest');
                                                        type="email"
                                                        className="form-control form-control btn-outline-warning"
                                                        placeholder="Adres email..."
-                                                       validate={(value)=>this.validateEmail(value)}  required/>
+                                                       validate={(value) => this.validateEmail(value)} required/>
                                                 {errors.email && touched.email && <div>{errors.email}</div>}
 
                                             </div>
@@ -120,7 +119,8 @@ console.log('jest');
                                                 <Field id="localisation" name="localisation" type="text"
                                                        className="form-control form-control btn-outline-warning"
                                                        placeholder="Lokalizacja..."/>
-                                                {errors.localisation && touched.localisation && <div>{errors.localisation}</div>}
+                                                {errors.localisation && touched.localisation &&
+                                                <div>{errors.localisation}</div>}
                                             </div>
                                             <div className="col-12 col-md-3 mb-2">
                                                 <Field id="field" name="field" type="text"
@@ -137,7 +137,8 @@ console.log('jest');
                                                 </div>
                                             </div>
                                             <label htmlFor="firstHand"
-                                                   className="form-control text-left text-secondary list-group-item-warning">Rynek pierwotny/deweloperski</label>
+                                                   className="form-control text-left text-secondary list-group-item-warning">Rynek
+                                                pierwotny/deweloperski</label>
 
                                         </div>
                                         <div className="input-group mb-3">
@@ -147,7 +148,8 @@ console.log('jest');
                                                 </div>
                                             </div>
                                             <label htmlFor="secondHand"
-                                                   className="form-control text-left text-secondary list-group-item-warning">Rynek wtórny</label>
+                                                   className="form-control text-left text-secondary list-group-item-warning">Rynek
+                                                wtórny</label>
                                         </div>
 
                                         <div className=" col-md-4 mx-md-auto mt-5">
@@ -163,8 +165,6 @@ console.log('jest');
                     </div>
                 </div>
             </section>
-
-
         );
     }
 }

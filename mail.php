@@ -8,9 +8,14 @@ const INVALID_EMAIL_DATA = 5;
 header('Content-Type: application/json');
 
 try {
-    $decoded = json_decode(file_get_contents('php://input'), true);
-    $sanitizedData = sanitize($decoded);
 
+    $decoded = json_decode(file_get_contents('php://input'), true);
+
+    if (!is_array($decoded)){
+        $decoded = json_decode($decoded, true);
+    }
+
+    $sanitizedData = sanitize($decoded);
     validate($sanitizedData);
 
     $name = $sanitizedData['name'];
