@@ -8,8 +8,8 @@ class Footer extends Component {
                     <div className="row">
                         <div className="col-lg-6 h-100 text-center text-lg-left my-auto">
                             <p>
-                                <a className="text-warning" href='mailto:szyndler1313@gmail.com'><i
-                                    className="fas fa-envelope"/> kontakt@lokalemiszkalne.eu</a>
+                                <a className="text-warning" href='mailto:kontakt@lokalemieszkalne.eu'><i
+                                    className="fas fa-envelope"/> kontakt@lokalemieszkalne.eu</a>
                                 <br/>
                                 <a className="text-warning" href='tel:693419740'><i className="fas fa-mobile-alt"/> 693
                                     419 740</a>
