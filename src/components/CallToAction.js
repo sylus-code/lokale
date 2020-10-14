@@ -9,9 +9,9 @@ class CallToAction extends Component {
                 <div className="container">
                     <div className="row ">
                         <div className='col-12'>
-                            <p className="text-left text-uppercase px-auto">{offer[3]}</p>
+                            <p className="text-left text-uppercase px-auto mb-4">{offer[3]}</p>
                             <h1 className="text-secondary text-uppercase pl-2 pb-3 ">{offer[0]}</h1>
-                            <p className="text-right text-uppercase px-auto">{offer[2]}</p>
+                            <p className="text-right text-uppercase px-auto mt-4">{offer[2]}</p>
                         </div>
                     </div>
                 </div>

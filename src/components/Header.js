@@ -12,9 +12,9 @@ class Header extends Component {
                 <div id="businessCard" className="col-12 col-md-8 order-1">
                     <div className="row ">
                         <div className="col-xl-9">
-                            <h1 className="text-uppercase font-weight-bolder">Lokale mieszkalne</h1>
+                            <h1 className="text-uppercase ">Lokale mieszkalne</h1>
                             <p>
-                                <a href='mailto:kontakt@lokalemieszkalne.eu' className=" font-weight-bolder text-white">
+                                <a href='mailto:kontakt@lokalemieszkalne.eu' className="text-white">
                                     <i className="fas fa-envelope mb-0 mt-2 mr-2"/>kontakt@lokalemieszkalne.eu</a>
                                 <br/>
                                 <a href='tel:693419740' className="text-dark font-weight-bold">
